@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.example.dragdemo.DragGridView
+        android:id="@+id/dragGridView"
+        android:listSelector="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:verticalSpacing="10dip"
+        android:horizontalSpacing="10dip"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        android:numColumns="3" >
+    </com.example.dragdemo.DragGridView>
+    <LinearLayout
+        android:id="@+id/llt"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#FF0000"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="拖动此处删除"/>
+    </LinearLayout>
+</RelativeLayout>
